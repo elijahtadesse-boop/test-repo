@@ -1,1 +1,2 @@
 "Hallo Welt vont git" 
+"Git hilfreich" 
