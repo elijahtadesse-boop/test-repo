@@ -1,10 +1,9 @@
-from cProfile import label
 
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-data = pd.read_csv('.venv/daten/SDS00001.CSV', sep=",", skiprows=2)
+data = pd.read_csv('daten/SDS00001.CSV', sep=",", skiprows=2)
 
 
 # Set custom column names for the DataFrame.
@@ -32,4 +31,4 @@ ax.set_ylabel("Spannung U/V")
 # Neues Histogramm nur mit den hohen Signalen plottem
 ax.legend()
 plt.show()
-
+plt.savefig("images/mit_cap.png")
